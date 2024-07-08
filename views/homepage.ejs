@@ -1,0 +1,590 @@
+<!-- Home page kung saan may create email button, magnifier, mode of screen and such
+    if may naiisip pa kayong design pls pu padagdag na lang ehe, may mga comments naman if nalilito kayo <3-->
+
+    <%- include('header') -%>
+
+    <body>
+    
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/homepage"><span class="text-dark span_custom">Eye</span>Daptify</a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="magnify">Magnifier</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" title="Colorblind Features">
+                                Modes of Screen
+                            </a>
+                            <!-- Wait lang, tatapusin ko within the week -->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" id="default">Default</a></li>
+                                <li><a class="dropdown-item" id="dark-mode">Dark Mode</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" style="border-color:black;">
+                                </li>
+                                <li><span class="dropdown-item-text" value="FontSizeChanger">Font Size Changer</span></li>
+                                <li>
+                                    <span class="dropdown-item-text value">20px</span>
+                                    <input type="range" name="range" id="range-slider" class="range-slider" min="16"
+                                        max="30" value="40" step="1" />
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" style="border-color:black;">
+                                </li>
+                                <li><a class="dropdown-item" value="ResetFontSize" id="reset-font-size">Reset Font Size</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" style="border-color:black;">
+                                </li>
+                                <li><span class="dropdown-item-text" style="color:#fca311;">Colorblind Options</span></li>
+                                <div class="option" id="option-deuteranomaly">
+                                    <li class="dropdown-item" id="radio-1" for="radio-1"><a>Deuteranomaly</a></li>
+                                </div>
+                                <div class="option" id="option-protanomaly">
+                                    <li class="dropdown-item" id="radio-2" for="radio-2"><a>Protanomaly</a></li>
+                                </div>
+                                <div class="option" id="option-tritanomaly">
+                                    <li class="dropdown-item" id="radio-3" for="radio-3"><a>Tritanomaly</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Body content-->
+        <section class="home_padding" style="padding-top: 100px;">
+            <div>
+                <h1 id="homepage_quote" class="text-center">Homepage</h1><br>
+                <div>
+        </section>
+    
+        <!-- Content will be changed kapag nasa katinuan na ko please, as much as possible explanation kung pano gamitin-->
+        <section class="about section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-12">
+                        <div class="objectives-text">
+                            <h2 class="font-changer">Objective of EyeDaptify</h2>
+                            <p class="font-changer">At EyeDaptify, our capstone project aims to develop an assistive website
+                                application employing NLP-driven technology to amend the work performance of visually
+                                impaired employees in the task of sending emails.
+                            </p>
+    
+                            <h2 class="font-changer">SoundSend Extension</h2>
+                            <p class="font-changer">This powerful tool offers a range of features designed to make web
+                                content more accessible and comfortable for all users.<br>
+                                Go to <a type="button" href="https://github.com/aalyaanna/SS-extension">SoundSend
+                                    Extension</a> to download our
+                                extension.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="card">
+                            <iframe width="100%" height="315"
+                                src="https://www.youtube.com/embed/MSf_azzdD7c?si=35j3Wz2MdEblUkqP"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- voice commands -->
+        <section class="vcommands section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 pb-3">
+                        <div class="section-header text-center pb-3">
+                            <h2 class="font-changer">Voice Commands</h2>
+                            <h4 class="font-changer">Voice commands is compose of four commands that you can use in sending
+                                email. To use this, click the activate voice command and say the word into your mic or
+                                devices.</h4>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <div class="card text-center pb-2 h-100 d-flex flex-column rounded">
+                            <div class="card-body flex-fill">
+                                <i class="bi bi-envelope-at-fill"></i>
+                                <h3 class="font-changer card-title">Compose</h3>
+                                <p class="font-changer lead">To open the email composition page.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-3">
+                        <div class="card text-center pb-2 h-100 d-flex flex-column rounded">
+                            <div class="card-body flex-fill">
+                                <i class="bi bi-file-earmark-text-fill"></i>
+                                <h3 class="font-changer card-title">Read</h3>
+                                <p class="font-changer lead">To read the content of the composed email.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-3">
+                        <div class="card text-center pb-2 h-100 d-flex flex-column rounded">
+                            <div class="card-body flex-fill">
+                                <i class="bi bi-file-earmark-pdf-fill"></i>
+                                <h3 class="font-changer card-title">Attach</h3>
+                                <p class="font-changer lead">To open computer or system files.</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-3">
+                        <div class="card text-center pb-2 h-100 d-flex flex-column rounded">
+                            <div class="card-body flex-fill">
+                                <i class="bi bi-envelope-heart-fill"></i>
+                                <h3 class="font-changer card-title">Send</h3>
+                                <p class="font-changer lead">To send emails.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="homepage_btn text-center pt-5">
+                    <a type="button" class="btn mx-5 font-changer email_btn" href="/email">Compose <br> Email</a>
+                    <button type="button" id="showVCModal" class="btn mx-5 font-changer">Activate Voice <br>
+                        Command</button>
+                    <!-- <button type="button" id="showSettingModal" class="btn mx-5 font-changer">Command <br>
+                        Setting</button> -->
+                </div>
+            </div>
+        </section>
+    
+        <section class="contact section-padding">
+            <form class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center pb-2">
+                            <h2 class="font-changer">Contact Us</h2>
+                            <h5 class="font-changer">If you have any queries, questions and suggestions, you can send it to
+                                us!<br>
+                                Please fill up the contact form for us to see your concerns.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0 contact-form">
+                    <div class="col-md-12 p-0 pt-4">
+                        <div class="mb-3">
+                            <label for="name" class="form-label font-changer">Full Name:</label>
+                            <input type="text" class="form-control font-changer" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label font-changer">Gmail Address:</label>
+                            <input type="email" class="form-control font-changer" id="address" placeholder="name@gmail.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label font-changer">Subject:</label>
+                            <input type="text" class="form-control font-changer" id="subject" placeholder="Subject"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="queries" class="form-label font-changer">Send Queries:</label>
+                            <textarea class="form-control font-changer" id="queries" rows="3" placeholder="Queries"
+                                required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-lg submit font-changer">Send</button>
+                </div>
+            </form>
+        </section>
+    
+        <%- include('footer') -%>
+
+    <!-- modal for explaning the voice commands and speech-to-text usage -->
+        <div class="modal fade" id="commandModal" tabindex="-1" aria-labelledby="gmailModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-content">
+                        <img src="https://raw.githubusercontent.com/gist/bietkul/20f702276adff150f3cc4502254665d2/raw/02a339636df69878b48608468f4f25333d3ef8c9/animation.gif"
+                            class="mx-auto d-block" style="
+                                height: 250px;
+                                width: 250px;">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="gmailModalLabel">Voice Command</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Welcome! You can interact with the website manually or using voice commands.</p>
+                            <ul class="font-changer">
+                                <li><b>Compose:</b> To open the email composition page.</li>
+                                <li><b>Read:</b> To read the content of the composed email.</li>
+                                <li><b>Attach:</b> To open computer or system files.</li>
+                                <li><b>Send:</b> To send emails.</li>
+                            </ul>
+                            <p>To activate voice command, click the <b>Activate</b> button to start voice command.</p>
+    
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="activateSpeechRecognition" class="btn btn-warning"
+                                data-bs-dismiss="modal">Activate</button>
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- modal for voice command setting using database -->
+        <!-- <div class="modal fade" id="vcSettingModal" tabindex="-1" aria-labelledby="gmailModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="gmailModalLabel">Command Setting</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <span class="close">&times;</span>
+                <div id="commandForm">
+                    <h2>Add/Edit Command</h2>
+                    <form id="commandForm">
+                        <label for="commandPhrase">Command Phrase:</label>
+                        <input type="text" id="commandPhrase" required><br>
+                        <label for="action">Action:</label>
+                        <input type="text" id="action" required>
+                        <button id="saveCommand">Save</button>
+                        <button id="cancelCommand">Cancel</button>
+                    </form>
+                </div>
+                <div id="commandsList">
+                    <h2>Command Settings</h2>
+                    <table id="commandsTable">
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Action</th>
+                                <th>Edit/Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="commandsBody">
+                        </tbody>
+                    </table>
+                    <button id="addCommand">Add Command</button>
+                </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    
+            <!-- Modal sa contact us -->
+            <div class="modal" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <img src="https://cdn.dribbble.com/users/4874/screenshots/1776423/inboxiconanimation_30.gif"
+                            class="mx-auto d-block" style="
+                        height: 250px;
+                        width: 250px;">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Contact User Feedback</h5>
+                            <button type="button" class="btn-close close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modal-message"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Magnifying glass, working na, WAG GAGALAWIN-->
+            <script>
+                
+                document.getElementById('showVCModal').addEventListener('click', function () {
+                    //display the voice command modal when the button is clicked
+                    $('#commandModal').modal('show');
+                });
+
+                document.getElementById('activateSpeechRecognition').addEventListener('click', function () {
+                    if ('speechSynthesis' in window) {
+                    const message = new SpeechSynthesisUtterance('Voice command has been activated successfully.');
+        
+                        window.speechSynthesis.speak(message);
+        
+                } else {
+                    console.log('Speech synthesis not supported.');
+                    }
+                });
+
+                // document.getElementById('showSettingModal').addEventListener('click', function () {
+                //     //display the voice command modal when the button is clicked
+                //     $('#vcSettingModal').modal('show');
+                // });
+    
+                //function for magnifying glass
+                const SCALE = 1.3; //magnification
+                const SIZE = 250; //diameter
+                const LENSE_OFFSET_X = SIZE / 10.2;
+                const LENSE_OFFSET_Y = SIZE / 10.2;
+    
+                document.documentElement.style.setProperty("--scale", SCALE);
+                document.documentElement.style.setProperty("--size", SIZE + "px");
+    
+                //create magnifying glass (lense)
+                const handle = document.createElement("div");
+                handle.classList.add("handle");
+    
+                const magnifyingGlass = document.createElement("div");
+                magnifyingGlass.classList.add("magnifying-glass");
+                magnifyingGlass.style.top = LENSE_OFFSET_Y + "px";
+                magnifyingGlass.style.left = LENSE_OFFSET_X + "px";
+    
+                handle.append(magnifyingGlass);
+    
+                const magnifyButton = document.getElementById("magnify");
+    
+                const addMagnifyingGlass = () => {
+                    const bodyClone = document.body.cloneNode(true);
+                    bodyClone.classList.add("body-clone");
+                    bodyClone.style.top = "0px";
+                    bodyClone.style.left = "0px";
+                    magnifyingGlass.append(bodyClone);
+                    document.body.append(handle);
+                };
+    
+                magnifyButton.addEventListener("click", addMagnifyingGlass);
+    
+                const moveMagnifyingGlass = (event) => {
+                    let pointerX = event.pageX;
+                    let pointerY = event.pageY;
+    
+                    //move magnifying glass with cursor
+                    handle.style.left = pointerX - SIZE / 1.7 + "px";
+                    handle.style.top = pointerY - SIZE / 1.7 + "px";
+                    if (magnifyingGlass.children[0]) {
+                        //align magnified document
+                        let offsetX = (SIZE * Math.pow(SCALE, 2)) / 2 - pointerX * SCALE;
+                        let offsetY = (SIZE * Math.pow(SCALE, 2)) / 2 - pointerY * SCALE;
+                        magnifyingGlass.children[0].style.left = offsetX + "px";
+                        magnifyingGlass.children[0].style.top = offsetY + "px";
+                    }
+                };
+    
+                document.addEventListener("pointermove", moveMagnifyingGlass);
+                const removeMagnifiyingGlass = (event) => {
+                    magnifyingGlass.children[0].remove();
+                    handle.remove();
+                };
+    
+                magnifyingGlass.addEventListener("dblclick", removeMagnifiyingGlass);
+    
+                //Sa font size changer, wag po muna galawin
+                $(document).ready(function () {
+                    $("#range-slider").on("input change", function () {
+                        $(".font-changer").css("font-size", $(this).val() + "px");
+                        $(".value").text($(this).val() + "px");
+                    });
+                });
+    
+                // sa pagbalik kapag naclik yung font changer hehe
+                $(document).ready(function () {
+                    $("#range-slider").on("input change", function () {
+                        const fontSize = $(this).val() + "px";
+                        $(".font-changer").css("font-size", fontSize);
+                        $(".value").text(fontSize);
+                    });
+    
+                    $("#reset-font-size").on("click", function () {
+                        const defaultFontSize = "20px";
+                        $(".font-changer").css("font-size", defaultFontSize);
+                        $("#range-slider").val(16);
+                        $(".value").text(defaultFontSize);
+                    });
+                });
+    
+                //sa modes of screen, wag po munang galawin pls pls pls nagpapractice pa po T T
+                function setDefaultMode() {
+                    const body = document.body;
+                    body.classList.remove("dark-mode");
+                    body.classList.remove("deuteranomaly-mode");
+                    body.classList.remove("protanomaly-mode");
+                    body.classList.remove("tritanomaly-mode");
+                    localStorage.setItem("darkModeEnabled", "false");
+                    applyFilter(); // Remove colorblind filters
+                }
+    
+                const defaultModeButton = document.getElementById("default");
+                defaultModeButton.addEventListener("click", setDefaultMode);
+    
+                function toggleDarkMode() {
+                    const body = document.body;
+                    if (body.classList.contains("dark-mode")) {
+                        body.classList.remove("dark-mode");
+                        localStorage.setItem("darkModeEnabled", "false");
+                    } else {
+                        body.classList.add("dark-mode");
+                        localStorage.setItem("darkModeEnabled", "true");
+                    }
+                    applyFilter(); // Remove colorblind filters when toggling dark mode
+                }
+    
+                const darkModeButton = document.getElementById("dark-mode");
+                darkModeButton.addEventListener("click", toggleDarkMode);
+    
+                //function for sending queries 
+                const contactForm = document.querySelector('.contact');
+                const name = document.getElementById('name');
+                const address = document.getElementById('address');
+                const subject = document.getElementById('subject');
+                const queries = document.getElementById('queries');
+                const modal = document.getElementById('myModal');
+                const modalMessage = document.getElementById('modal-message');
+                const closeBtn = document.querySelector('.close');
+    
+                contactForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+    
+                    let formData = {
+                        name: name.value,
+                        address: address.value,
+                        subject: subject.value,
+                        queries: queries.value,
+                    };
+    
+                    let xhr = new XMLHttpRequest();
+                    xhr.open('POST', '/');
+                    xhr.setRequestHeader('content-type', 'application/json');
+                    xhr.onload = function () {
+                        console.log(xhr.responseText);
+                        if (xhr.responseText == 'success') {
+                            modalMessage.textContent = 'Email sent!';
+                            modal.style.display = 'block';
+                            name.value = '';
+                            address.value = '';
+                            subject.value = '';
+                            queries.value = '';
+                        } else {
+                            modalMessage.textContent = 'Email failed!';
+                            modal.style.display = 'block';
+                        }
+                    };
+    
+                    xhr.send(JSON.stringify(formData));
+                });
+    
+                //close the modal when the close button is clicked
+                closeBtn.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                });
+    
+                //close the modal if the user clicks outside of it
+                window.addEventListener('click', (e) => {
+                    if (e.target == modal) {
+                        modal.style.display = 'none';
+                    }
+                });
+            </script>
+    
+            <script>
+                //sa colorblind anomalies
+                function applyFilter(filter) {
+                    // Remove any existing styling and filter elements
+                    const existingStyling = document.getElementById("styleID612481");
+                    const existingFilter = document.getElementById("filterID471924");
+    
+                    if (existingStyling) {
+                        existingStyling.remove();
+                    }
+    
+                    if (existingFilter) {
+                        existingFilter.remove();
+                    }
+    
+                    // Create new styling and filter elements
+                    const stylingID = document.createElement('style');
+                    stylingID.id = "styleID612481";
+                    document.body.appendChild(stylingID);
+    
+                    const filterID = document.createElement('div');
+                    filterID.id = "filterID471924";
+                    filterID.setAttribute('style', 'height: 0; padding: 0; margin: 0; line-height: 0;');
+                    document.body.appendChild(filterID);
+    
+                    // Set the filter SVG content based on the selected colorblind option
+                    let svgContent = '';
+    
+                    switch (filter) {
+                        case 'deuteranomaly':
+                            svgContent =
+                                '<svg id="colorblind-filters" style="display: none"> <defs> <filter id="deuteranomaly"> <feColorMatrix type="matrix" values="0.8 0.2 0 0 0 0.258 0.742 0 0 0 0 0.142 0.858 0 0 0 0 0 1 0" in="SourceGraphic" /> </filter> </defs> </svg>';
+                            break;
+                        case 'protanomaly':
+                            svgContent =
+                                '<svg id="colorblind-filters" style="display: none"> <defs> <filter id="protanomaly"> <feColorMatrix type="matrix" values="0.817 0.183 0 0 0 0.333 0.667 0 0 0 0 0.125 0.875 0 0 0 0 0 1 0" in="SourceGraphic" /> </filter> </defs> </svg>';
+                            break;
+                        case 'tritanomaly':
+                            svgContent =
+                                '<svg id="colorblind-filters" style="display: none"> <defs> <filter id="tritanomaly"> <feColorMatrix type="matrix" values="0.967 0.033 0 0 0 0 0.733 0.267 0 0 0 0.183 0.817 0 0 0 0 0 1 0" in="SourceGraphic" /> </filter> </defs> </svg>';
+                            break;
+                        default:
+                            // Default to an empty SVG
+                            svgContent = '<svg id="colorblind-filters" style="display: none"></svg>';
+                            break;
+                    }
+    
+    
+                    stylingID.innerHTML =
+                        `html{-webkit-filter:url(#${filter});-moz-filter:(#${filter});-ms-filter:(#${filter});-o-filter:(#${filter});filter:(#${filter});}`;
+                    filterID.innerHTML = svgContent;
+    
+                    // Trigger a reflow to apply the filter immediately
+                    setTimeout(function () {
+                        window.scrollBy(1, 1);
+                        window.scrollBy(-1, -1);
+                    }, 1);
+                }
+    
+                document.querySelectorAll('[id^="radio"]').forEach((radioButton) => {
+                    const filter = radioButton.parentElement.id.replace("option-", "");
+                    radioButton.addEventListener("click", async function () {
+                        // Trigger the filter application when a radio button is clicked
+                        applyFilter(filter);
+                    });
+                });
+            </script>
+    
+            <script>
+                //voice command for opening the email composition page
+                document.getElementById('activateSpeechRecognition').addEventListener('click', function () {
+                    if (annyang) {
+                        const commands = {
+                            'compose': function () {
+                                console.log('Voice command detected: compose');
+                                window.location.href = '/email';
+                            }
+                        };
+    
+                        annyang.addCommands(commands);
+                        annyang.start();
+                    }
+                });
+            </script>
+    </body>

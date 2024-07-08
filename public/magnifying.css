@@ -1,0 +1,46 @@
+/* WAG GAGALAWIN !!!!!!!!!!!*/
+:root {
+  --scale: 1.3;
+  --size: 250px;
+  --scrollbar-width: 36px;
+}
+
+.handle {
+  position: absolute;
+}
+
+.magnifying-glass {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  height: var(--size);
+  width: var(--size);
+  border: solid 3px black;
+  background: radial-gradient(#f5fcfc 45%, gray);
+  overflow: hidden;
+  border-radius: 20%;
+}
+
+.magnifying-glass::after {
+  display: block;
+  position: relative;
+  content: "";
+  top: calc(2 * var(--size) / 3);
+  left: calc(2 * var(--size) / 3);
+  height: 15px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 10;
+  transform: rotate(-45deg);
+  opacity: 70%;
+}
+
+.body-clone {
+  position: absolute;
+  margin-left: 8vw;
+  padding: inherit;
+  height: 100vh;
+  width: calc(100vw - var(--scrollbar-width));
+  transform: scale(var(--scale));
+}

@@ -1,0 +1,174 @@
+/* welcomepage starter design, lahat ng nasa welcomepage.ejs na design andito */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome-banner {
+    background-color: #fca311;
+}
+
+.carousel-item {
+    height: 50vh;
+}
+
+.carousel-caption {
+    color: black;
+    bottom: 75px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.quote-padding {
+    padding: 200px 0;
+}
+
+.section-padding {
+    padding: 50px;
+}
+
+.section-padding h2 {
+    font-weight: bolder;
+}
+
+.about-text {
+    padding-top: 50px;
+}
+
+.about-text p {
+    font-size: larger;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card {
+    background-color: white;
+    color: black;
+    margin-bottom: 30px;
+
+
+    border-radius: 30px !important;
+    z-index: 0;
+    overflow: hidden;
+    border: 1px solid #6E2C00;
+
+    &:hover {
+        transition: all 0.2s ease-out;
+        box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+        top: -4px;
+        border: 1px solid #cccccc;
+        background-color: white;
+    }
+
+    &:hover:before {
+        transform: scale(2.15);
+    }
+}
+
+.card-body i,
+h3 {
+    color: #6E2C00 !important;
+}
+
+
+.services {
+    background-color: #fef9f3;
+    color: black;
+    padding: 80px;
+}
+
+.services .card-body i {
+    font-size: 50px;
+}
+
+.accordion-button {
+    margin-bottom: 10px;
+}
+
+.accordion-body {
+    margin-top: 15px;
+    padding: 25px;
+    background: #fef9f3;
+    border-radius: 30px;
+    box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.accordion-item {
+    border: 0px;
+}
+
+.accordion-item span {
+    font-size: larger;
+}
+
+.accordion-button:not(.collapsed) {
+    border: 0px;
+    color: #fca311;
+    background-color: #ffffff;
+    box-shadow: inset 0 0px 0 rgb(0 0 0 / 13%);
+}
+
+.circle-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fca311;
+    border: 5px solid #fca311;
+    color: #fff;
+    margin-left: -20px;
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.contact-form label {
+    font-size: larger;
+}
+
+.contact-form input {
+    border-color: black;
+    font-size: larger;
+}
+
+.contact-form textarea {
+    border-color: black;
+    font-size: larger;
+}
+
+.contact button {
+    border-color: #fca311;
+    color: #fca311;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    background-color: #fca311;
+    color: black;
+}
+
+/*font sa modals*/
+
+.modal-title {
+    font-weight: bolder;
+}

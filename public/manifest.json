@@ -1,0 +1,16 @@
+{
+    "name" : "EyeDaptify",
+    "Short_name" : "EyeDaptify",
+    "description" : "an accessibility website for VI employees",
+    "icons" : [
+        {
+            "src" : "assets/eyedaptify.png",
+            "sizes" : "415x415",
+            "type" : "image/png"
+        }
+    ],
+    "start_url" : "/",
+    "display" : "fullscreen",
+    "theme_color" : "white",
+    "background_color" : "white"
+}

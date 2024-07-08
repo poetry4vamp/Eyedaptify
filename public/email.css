@@ -1,0 +1,62 @@
+/* lahat ng nasa email.ejs na design andito */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.email_padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.email_custom label {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.email_custom input {
+    font-size: larger;
+    border-color: black;
+}
+
+.email_custom textarea {
+    border-color: black;
+}
+
+.email_custom a {
+    border-color: #fca311;
+    background-color: #ffffff;
+    color: black;
+    font-size: large;
+}
+
+.email_custom a:hover {
+    background-color: #fca311;
+    color: black;
+}
+
+.email_custom button {
+    border-color: #fca311;
+    background-color: #ffffff;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.modal-body p {
+    font-size: 18px;
+}
+
+.modal-body ul {
+    font-size: 18px;
+}
+
+.modal-body li {
+    font-size: 18px;
+}
+
+.email_custom button:hover {
+    background-color: #fca311;
+    color: black;
+}

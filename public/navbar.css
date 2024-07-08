@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body,
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* navigation styles */
+.navbar .getstarted {
+  background: white;
+  margin-left: 30px;
+  border-radius: 4px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  line-height: 2.3;
+}
+
+.navbar-nav a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-nav span {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-brand {
+  color: #fca311;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: black;
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+  background: #fff;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  width: 80%;
+  margin-left: 20px;
+  height: 4px;
+  background-color: #fca311;
+  outline: none;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: #fca311;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+span.value {
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+span.text {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Modes of screen color modification, wag po muna galawin pls pls /lumuhod */
+
+/*DARK MODE*/
+body.dark-mode {
+  background-color: #111;
+  color: #fff;
+}
+
+body.dark-mode .range-slider {
+  background-color: #111 !important;
+}
+
+body.dark-mode .range-slider::-webkit-slider-thumb {
+  background-color: #111 !important;
+}
+
+body.dark-mode input {
+  background-color: #111 !important;
+  color: #fff !important;
+  border: 2px solid white !important;
+}
+
+body.dark-mode textarea {
+  background-color: #111 !important;
+  color: #fff !important;
+  border: 2px solid white !important;
+}
+
+body.dark-mode .form-control::placeholder {
+  color: #fff !important;
+}
+
+body.dark-mode button {
+  border-color: #fca311;
+  background-color: #111;
+  color: #fff;
+}
+
+body.dark-mode .email_btn {
+  border-color: #fca311;
+  background-color: #111;
+  color: #fff !important;
+}
+
+body.dark-mode nav {
+  background-color: #222 !important;
+}
+
+body.dark-mode .span_custom {
+  color: #fff !important;
+}
+
+body.dark-mode .navbar-brand:hover {
+  color: #fff !important;
+}
+
+body.dark-mode .nav-link {
+  color: #fff !important;
+}
+
+.dark-mode .border.border-black {
+  border: 2px solid white !important;
+}
+
+body.dark-mode .footer-custom {
+  background-color: #222;
+}
+
+body.dark-mode .footer-custom h2 {
+  color: #fff;
+}
+
+body.dark-mode .footer-custom h3 {
+  color: #fff;
+}
+
+body.dark-mode .footer-custom p {
+  color: #fff;
+}
+
+body.dark-mode .card-body {
+  background-color: #111;
+}
+
+body.dark-mode .icon_footer {
+  color: #fff !important;
+}
+
+body.dark-mode .vcommands {
+  background-color: #000 !important;
+  color: white;
+}
+
+body.dark-mode .home_padding {
+  background-color: #000 !important;
+}
+
+body.dark-mode .modal-body p,
+ul,
+li {
+  color: black;
+}
+
+body.dark-mode .modal-title {
+  color: #000;
+}
+
+body.dark-mode .btn-attach {
+  color: white !important;
+}
