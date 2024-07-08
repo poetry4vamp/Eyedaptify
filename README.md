@@ -20,7 +20,7 @@
 
 ### Log in into the official gmail account of the website.
     email: soundsendofficial@gmail.com
-    pass: 
+    pass: soundsendofficial01
 
 ### For the database, create your own database then create a model named ``` Emails ```,
 
@@ -44,7 +44,7 @@
     service:'gmail',
     auth:{
         type:'OAuth2',
-        user: 'youremailaddress',
+        user: 'soundsendofficial@gmail.com',
         accessToken: 'paste generated access token here'
       }
     })
@@ -59,20 +59,19 @@
 
 PROGRESS:
 - Magnifier (WORKING)
-- Modes of Screen (WORKING)
+- Modes of Screen
 
 - Magic Auth Link (WORKING)
 - Email Layout (DONE)
-- Email Functions (WORKING)
+- Email Functions
 
     a. Sending (WORKING)
   
     b. Attaching File (WORKING)
   
-    c. Speech-to-Text (WORKING)
+    c. Speech-to-Text
   
-    d. Voice Commands (WORKING)
+    d. Voice Commands
 
-- Overall Design (DONE)
-- Database for handling user email address (WORKING)
-
+- Overall Design
+- Database for handling user email address.
