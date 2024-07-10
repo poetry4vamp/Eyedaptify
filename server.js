@@ -51,8 +51,8 @@ const transport = nodemailer.createTransport({
     service:'gmail',
     auth:{
         type:'OAuth2',
-        user: 'soundsendofficial@gmail.com',
-        accessToken: 'ya29.a0AfB_byBE4t05r0s97yxeUbwLSDjI1RYFe1ySfBzwd5cN8_wsZ4KxLP1CKRTwPbXNBDS6tsVIKjHo8K6B31FYazrac5aBfYpXSt769XUTsOXlSYMdU6v6MoHtg4_1RbOsfZrxDBAjNLg6FzeasZyDc25iaBM6ce1dRQGPaCgYKATMSARISFQHGX2MiP0XQwDBJp7CxjgTFFOiU8w0171'
+        user: '<soundsendgmail>',
+        accessToken: '<generatedtoken>'
     }
 })
 
@@ -60,8 +60,8 @@ const transport = nodemailer.createTransport({
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'soundsendofficial@gmail.com',
-        pass: 'cqhhguzvcslpdeop'
+        user: '<soundsendgmail>',
+        pass: '<apppassword>'
     }
 })
 
@@ -101,7 +101,7 @@ app.post('/', (req, res) => {
 
     const queriesOptions = {
         from: req.body.address,
-        to: 'soundsendofficial@gmail.com',
+        to: '<soundsendgmail>',
         subject: `Feedback from ${req.body.name} at EyeDaptify Website`,
         text: `The feedback from ${req.body.address}\nSubject: ${req.body.subject}\nQueries: ${req.body.queries}`
     }
@@ -144,7 +144,7 @@ app.post('/login', async (req, res) => {
         });
 
         const mailOptions = {
-            from: 'soundsendofficial@gmail.com',
+            from: '<soundsendgmail>',
             to: email,
             subject: 'Magic Auth Link',
             html: `
