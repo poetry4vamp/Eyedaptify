@@ -57,17 +57,17 @@
 ### In the Request/Response window, go to "access_token" at the bottom then copy the provided/generated key and paste it on the accessToken.
 ### Note that the access token from OAuth is only accessible for 1hr, after 1hr you have to generate another access token.
 
-PROGRESS:
-- Magnifier (WORKING)
+FUNCTIONALITIES:
+- Magnifier 
 - Modes of Screen
 
-- Magic Auth Link (WORKING)
-- Email Layout (DONE)
+- Magic Auth Link
+- Email Layout 
 - Email Functions
 
-    a. Sending (WORKING)
+    a. Sending 
   
-    b. Attaching File (WORKING)
+    b. Attaching File 
   
     c. Speech-to-Text
   
