@@ -19,8 +19,8 @@
 ```npx prisma init```
 
 ### Log in into the official gmail account of the website.
-    email: soundsendofficial@gmail.com
-    pass: soundsendofficial01
+    email: [email]
+    pass: [password]
 
 ### For the database, create your own database then create a model named ``` Emails ```,
 
@@ -35,7 +35,7 @@
     provider = "mongodb"
 
 ### In the root directory of our project, create a file ``` .env ``` and add this,
-    DATABASE_URL="mongodb+srv://<account name>:<password>@cluster0.534kjgp.mongodb.net/<db name>"
+    DATABASE_URL="mongodb+srv://<account name>:<password>@cluster0.534kjgp.mongodb.net/<dbname>"
 
     ps. make sure to remove the <> when you provide your account name, password, and db name.
     
@@ -44,7 +44,7 @@
     service:'gmail',
     auth:{
         type:'OAuth2',
-        user: 'soundsendofficial@gmail.com',
+        user: 'email',
         accessToken: 'paste generated access token here'
       }
     })
